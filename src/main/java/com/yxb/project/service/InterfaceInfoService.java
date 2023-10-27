@@ -1,7 +1,7 @@
 package com.yxb.project.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.yxb.project.model.entity.InterfaceInfo;
+import com.yxb.byapicommon.model.entity.InterfaceInfo;
 
 /**
 * @author 22617

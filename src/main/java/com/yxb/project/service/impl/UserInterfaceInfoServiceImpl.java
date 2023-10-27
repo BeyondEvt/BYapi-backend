@@ -1,15 +1,13 @@
 package com.yxb.project.service.impl;
 
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.yxb.byapicommon.model.entity.UserInterfaceInfo;
+
 import com.yxb.project.common.ErrorCode;
 import com.yxb.project.exception.BusinessException;
-import com.yxb.project.model.entity.InterfaceInfo;
-import com.yxb.project.model.entity.UserInterfaceInfo;
 import com.yxb.project.mapper.UserInterfaceInfoMapper;
 import com.yxb.project.service.UserInterfaceInfoService;
-import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;
 
 /**
@@ -19,14 +17,13 @@ import org.springframework.stereotype.Service;
 */
 @Service
 public class UserInterfaceInfoServiceImpl extends ServiceImpl<UserInterfaceInfoMapper, UserInterfaceInfo>
-    implements UserInterfaceInfoService{
+    implements UserInterfaceInfoService {
     @Override
     public void validUserInterfaceInfo(UserInterfaceInfo userinterfaceInfo, boolean add) {
 
         if (userinterfaceInfo == null) {
             throw new BusinessException(ErrorCode.PARAMS_ERROR);
         }
-
 
 
         // 创建时，所有参数必须非空

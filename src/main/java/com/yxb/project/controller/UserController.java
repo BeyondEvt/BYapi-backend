@@ -3,6 +3,7 @@ package com.yxb.project.controller;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.plugins.pagination.PageDTO;
+import com.yxb.byapicommon.model.entity.User;
 import com.yxb.project.annotation.AuthCheck;
 import com.yxb.project.common.BaseResponse;
 import com.yxb.project.common.DeleteRequest;
@@ -13,7 +14,6 @@ import com.yxb.project.exception.BusinessException;
 
 import com.yxb.project.model.dto.user.*;
 
-import com.yxb.project.model.entity.User;
 import com.yxb.project.model.vo.UserVO;
 import com.yxb.project.service.UserService;
 import org.apache.commons.lang3.StringUtils;

@@ -1,10 +1,10 @@
 package com.yxb.project.aop;
 
 import com.baomidou.mybatisplus.core.toolkit.CollectionUtils;
+import com.yxb.byapicommon.model.entity.User;
 import com.yxb.project.annotation.AuthCheck;
 import com.yxb.project.common.ErrorCode;
 import com.yxb.project.exception.BusinessException;
-import com.yxb.project.model.entity.User;
 import com.yxb.project.service.UserService;
 import org.apache.commons.lang3.StringUtils;
 import org.aspectj.lang.ProceedingJoinPoint;

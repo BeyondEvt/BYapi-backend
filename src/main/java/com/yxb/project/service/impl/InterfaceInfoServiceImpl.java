@@ -1,10 +1,9 @@
 package com.yxb.project.service.impl;
-import java.util.Date;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.yxb.byapicommon.model.entity.InterfaceInfo;
 import com.yxb.project.common.ErrorCode;
 import com.yxb.project.exception.BusinessException;
-import com.yxb.project.model.entity.InterfaceInfo;
 import com.yxb.project.service.InterfaceInfoService;
 import com.yxb.project.mapper.InterfaceInfoMapper;
 import org.apache.commons.lang3.StringUtils;

@@ -1,7 +1,7 @@
 package com.yxb.project.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.yxb.project.model.entity.UserInterfaceInfo;
+import com.yxb.byapicommon.model.entity.UserInterfaceInfo;
 
 /**
 * @author 22617

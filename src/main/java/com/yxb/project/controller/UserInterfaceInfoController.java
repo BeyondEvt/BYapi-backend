@@ -2,8 +2,9 @@ package com.yxb.project.controller;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.google.gson.Gson;
-import com.yxb.byapiclientsdk.client.BYapiClient;
+import com.yxb.byapicommon.model.entity.User;
+import com.yxb.byapicommon.model.entity.UserInterfaceInfo;
+import com.yxb.byapicommon.service.InnerUserInterfaceInfoService;
 import com.yxb.project.annotation.AuthCheck;
 import com.yxb.project.common.*;
 import com.yxb.project.constant.CommonConstant;
@@ -12,8 +13,6 @@ import com.yxb.project.exception.BusinessException;
 import com.yxb.project.model.dto.userinterfaceinfo.UserInterfaceInfoAddRequest;
 import com.yxb.project.model.dto.userinterfaceinfo.UserInterfaceInfoQueryRequest;
 import com.yxb.project.model.dto.userinterfaceinfo.UserInterfaceInfoUpdateRequest;
-import com.yxb.project.model.entity.UserInterfaceInfo;
-import com.yxb.project.model.entity.User;
 
 import com.yxb.project.service.UserInterfaceInfoService;
 import com.yxb.project.service.UserService;
